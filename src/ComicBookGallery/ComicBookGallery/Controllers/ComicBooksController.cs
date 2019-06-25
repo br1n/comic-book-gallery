@@ -11,6 +11,7 @@ namespace ComicBookGallery.Controllers
     {
         public ActionResult Detail()
         {
+            //creates comicBook Model instance passed to view
             var comicBook = new ComicBook()
             {
                 SeriesTitle = "The Amazing Spider-Man",
@@ -28,5 +29,6 @@ namespace ComicBookGallery.Controllers
 
             return View(comicBook);
         }
+
     }
 }
